@@ -169,15 +169,19 @@ p {
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo" style="text-align: center; margin-bottom: 30px;">Serveur Web HTTP simple en langage C</div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="about.html">A-propos</a></li>
-                <li><a href="Contact.html"> Contact</a></li>
-                <li><a href="more.html"> Plus-d'information</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo">Serveur Web HTTP en C</div>
+                <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="more.html">Plus d'information</a></li>
+                </ul>
+            </div>
         </nav>
+    </header>
         <div class="container">
             <h1>Bienvenue sur mon serveur web en langage C!</h1>
             <p>Cette page Web est servie à partir d’un serveur HTTP minimal écrit entièrement en C. Il est rapide, léger et démontre des compétences réseau de bas niveau.</p>
@@ -209,5 +213,11 @@ p {
         </div>
         <a href="more.html" class="more-info-button">Cliquez-ici pour plus d'informations</a>
     </header>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('nav-links').classList.toggle('open');
+        });
+    </script>
+    
 </body>
 </html>

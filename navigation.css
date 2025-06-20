@@ -1,61 +1,96 @@
 /* navigation.css */
 
-nav {
-    background-color: #2c3e50; /* Dark blue-gray background for the nav bar */
-    padding: 15px 0; /* Vertical padding */
-    text-align: center; /* Center the navigation items */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+.navbar {
+    background-color: #2c3e50;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
 }
 
-nav .logo {
-    color: #ecf0f1; /* Light text for the logo */
-    font-size: 1.8em; /* Larger font size for the logo */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.8em;
+    color: #ecf0f1;
     font-weight: bold;
-    margin-bottom: 15px; /* Space below the logo */
-    letter-spacing: 1px; /* Slightly spaced letters for style */
+    letter-spacing: 1px;
 }
 
-nav ul {
-    list-style: none; /* Remove default list bullets */
-    padding: 0;
-    margin: 0;
-    display: flex; /* Use flexbox for horizontal alignment */
-    justify-content: center; /* Center the list items */
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
 }
 
-nav ul li {
-    margin: 0 20px; /* Horizontal spacing between list items */
+.nav-links li {
+    position: relative;
 }
 
-nav ul li a {
-    text-decoration: none; /* Remove underline from links */
-    color: #ecf0f1; /* Light text color for links */
-    font-size: 1.1em; /* Font size for navigation links */
-    padding: 8px 15px; /* Padding inside the links, makes them easier to click */
-    border-radius: 5px; /* Slightly rounded corners for links */
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; /* Smooth transitions for hover effects */
-    display: block; /* Make the whole padding area clickable */
+.nav-links a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 1.1em;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
 }
 
-nav ul li a:hover,
-nav ul li a.active { /* 'active' class for the current page */
-    background-color: #3498db; /* A vibrant blue on hover */
-    color: #ffffff; /* White text on hover */
-    transform: translateY(-2px); /* Slight lift effect on hover */
-    box-shadow: 0 3px 8px rgba(52, 152, 219, 0.4); /* Shadow on hover */
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #3498db;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(52, 152, 219, 0.4);
 }
 
-/* Responsive adjustments for smaller screens */
-@media (max-width: 600px) {
-    nav ul li {
-        margin: 10px 15px; /* Adjust spacing for small screens */
+/* Hamburger button for mobile */
+.menu-toggle {
+    display: none;
+    background: none;
+    font-size: 28px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
     }
-    nav ul li a {
-        font-size: 1em; /* Slightly smaller font for links on small screens */
-        padding: 6px 12px;
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #34495e;
+        width: 100%;
+        padding: 10px 0;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
     }
-    nav .logo {
-        font-size: 1.5em; /* Smaller logo on small screens */
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
     }
 }
