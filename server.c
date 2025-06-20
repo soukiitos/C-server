@@ -28,14 +28,14 @@ int main() {
 
         addrlen = sizeof(address);
 
-        // 1. Create socket
+        // 1. créer une socket
         server_fd = socket(AF_INET, SOCK_STREAM, 0);
         if (server_fd == -1) {
                 perror("socket failed");
                 return 1;
         }
 
-        // 2. Bind to port
+        // 2. se lier à port
         address.sin_family = AF_INET;
         address.sin_addr.s_addr = INADDR_ANY; // 0.0.0.0
         address.sin_port = htons(PORT);
@@ -45,7 +45,7 @@ int main() {
                 return 1;
         }
 
-        // 3. Listen for incoming connections
+        // 3. Écoutez les connexions entrantes
         if (listen(server_fd, 10) < 0) {
                 perror("listen");
                 return 1;
@@ -54,7 +54,7 @@ int main() {
         printf("server running at http://localhost: %d...\n", PORT);
         printf("Press Ctrl+C to stop the server.\n");
 
-        // 4. Accept one connection
+        // 4. Accepter une connexion
         while (1) {
                 new_socket = accept(server_fd, (struct sockaddr *)&address, (socklen_t*)&addrlen);
                 if (new_socket < 0) {
@@ -62,7 +62,7 @@ int main() {
                         continue;
                 }
 
-                // 5. Read data from client
+                // 5. Lire les données du client
                 memset(buffer, 0, BUFFER_SIZE);
                 int valread = recv(new_socket, buffer, BUFFER_SIZE, 0);
                 if(valread < 0) {
@@ -73,16 +73,16 @@ int main() {
 
                 printf("Received request:\n%s\n", buffer);
 
-                // Parse HTTP method and path
+                // Analyser la méthode et le chemin HTTP
                 char method[8], path[1019]; // 1024 - 1 (for dot) - 1 (for null) - 3 extra buffer
                 sscanf(buffer, "%s %s", method, path);
 
-                // Default route ("/") becomes index.html
+                // La route par défaut ("/") devient index.html
                 if (strcmp(path, "/") == 0) {
                         strcpy(path, "/index.html");
                 }
 
-                // Remove leading slash from path
+                // Supprimer la barre oblique initiale du chemin
                 char filepath[1024];
                 snprintf(filepath, sizeof(filepath), ".%s", path);
 
@@ -100,7 +100,7 @@ int main() {
                         file_buffer[fsize] = 0;
                         fclose(fp);
 
-                        // 6. Send a basic http response
+                        // 6. Envoyer une réponse http de base
                         char header[256];
                         sprintf(header,
                                         "HTTP/1.1 200 OK\r\n"
@@ -112,7 +112,7 @@ int main() {
                         free(file_buffer);
                 }
 
-                // Close sockets and cleanup
+                // Fermer les sockets et nettoyer
 #ifdef _WIN32
                 closesocket(new_socket);
 #else

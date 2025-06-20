@@ -215,6 +215,26 @@ nav ul li a:hover:before {
       background-color: #00d0e0; 
       transform: translateY(-2px); 
     }
+
+    .more-info-button {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 15px 30px;
+        background-color: #3498db;
+        color: white;
+        text-decoration: none; 
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 1.1em;
+        transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+        box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+    }
+
+    .more-info-button:hover {
+        background-color: #2980b9;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(52, 152, 219, 0.6);
+    }
                 </style>
         </head>
         <body>
@@ -225,6 +245,7 @@ nav ul li a:hover:before {
                                         <li><a href="#">Home</a></li>
                                         <li><a href="about.html">A-propos</a></li>
                                         <li><a href="Contact.html"> Contact</a></li>
+                                        <li><a href="more.html"> Plus-d'information</a></li>
                                 </ul>
                         </nav>
                         <div class="container">
@@ -256,5 +277,6 @@ nav ul li a:hover:before {
                                   </div>
                                 <div class="footer"> Fait par Soukaina Lachheb</div>
                         </div>
+                        <a href="more.html" class="more-info-button">Cliquez-ici pour plus d'informations</a>
         </body>
 </html>
