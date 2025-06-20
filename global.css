@@ -1,0 +1,99 @@
+/* global.css */
+
+/* Global Reset: Standardize box-sizing, remove default margins and paddings */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Base Body Styles: Define the overall background, text color, font, and line height */
+body {
+    background: linear-gradient(135deg, #ab14fd 0%, #c2e9fb 100%); /* A vibrant gradient background */
+    color: #333; /* Default text color */
+    font-family: 'Segoe UI', sans-serif; /* Modern, readable font */
+    line-height: 1.6; /* Improves readability for paragraphs */
+}
+
+/* Generic Heading Styles: Provide a consistent look for all headings (can be overridden) */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #4b0082; /* Primary heading color */
+}
+h2 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #3498db; /* Secondary heading color */
+}
+h3 {
+    font-size: 1.4rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Generic Paragraph Styles */
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Generic List Styles */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+/* Generic Preformatted Text and Code Styles (for code snippets) */
+pre {
+    background-color: #eef;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto; /* Ensures code blocks are scrollable if content overflows */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f0f0f0;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+/* Content Container: A reusable class to wrap and style main content sections */
+.content-container {
+    max-width: 900px; /* Maximum width for content */
+    margin: 50px auto; /* Centers the container horizontally with vertical margins */
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    text-align: left; /* Default text alignment */
+}
+
+/* Footer Styles: For consistent footer presentation */
+.footer {
+    color: #898;
+    font-size: 1rem;
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 700px) {
+    .content-container {
+        padding: 35px;
+        margin: 30px 20px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
