@@ -54,6 +54,28 @@ p {
     color: #2c3e50;
 }
 
+nav ul {
+	list-style: none;
+	display: flex;
+	gap: 15px;
+	justify-content: center;
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	font-weight: 500;
+	padding: 10px 15px;
+	border-radius: 8px;
+	transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+	color: #ffd700;
+	border-color: #ffd700;
+	box-shadow: 0 0 10px #ffd700, 0 0 5px #fff inset;
+}
+
 .footer {
     color: #898;
     font-size: 1rem;
@@ -172,7 +194,7 @@ p {
     <header>
         <nav class="navbar">
             <div class="navbar-container">
-                <div class="logo">Serveur Web HTTP en C</div>
+                <div class="logo" style="text-align: center; margin-bottom: 30px; font-size: 2.5rem;">Serveur Web HTTP en C</div>
                 <button class="menu-toggle" id="menu-toggle">&#9776;</button>
                 <ul class="nav-links" id="nav-links">
                     <li><a href="#" class="active">Home</a></li>
