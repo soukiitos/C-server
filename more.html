@@ -7,15 +7,197 @@
   <link rel="stylesheet" href="global.css">
   <link rel="stylesheet" href="navigation.css">
   <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+body {
+background: linear-gradient(135deg, #ab14fd 0%, #c2e9fb 100%);
+color: #333;
+}
+
+header {
+background-color: #4b11f5;
+box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
+padding: 26px 0;
+}
+
+h1 {
+font-size: 2.5rem;
+color: #4b0082;
+margin-bottom: 20px;
+}
+
+p {
+font-size: 1.1rem;
+line-height: 1.6;
+color: #555;
+}
+
+.container {
+max-width: 800px;
+margin: 50px auto;
+background: white;
+padding: 40px;
+border-radius: 16px;
+box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+text-align: center;
+}
+
+.logo {
+padding-bottom: 10px;
+}
+
+.logo h1 {
+font-size: 42px;
+color: #2c3e50;
+}
+
+nav ul {
+list-style: none;
+display: flex;
+gap: 15px;
+justify-content: center;
+}
+
+nav ul li a {
+color: white;
+text-decoration: none;
+font-weight: 500;
+padding: 10px 15px;
+border-radius: 8px;
+transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+color: #ffd700;
+border-color: #ffd700;
+box-shadow: 0 0 10px #ffd700, 0 0 5px #fff inset;
+}
+
+.footer {
+color: #898;
+font-size: 1rem;
+margin-top: 40px;
+}
+
+@media (max-width: 700px) {
+/* Ces règles sont spécifiques au conteneur et aux titres d'index.html si elles ne sont pas dans navigation.css */
+.container {
+    padding: 35px;
+    margin: 30px 20px;
+}
+h1 {
+    font-size: 2rem;
+}
+}
+
+/* Styles pour le formulaire de contact */
+.contact-section {
+margin-top: 60px; 
+padding-top: 40px;
+border-top: 1px solid #eee; 
+}
+
+.contact-section h2 {
+color: #333;
+font-size: 28px;
+margin-bottom: 30px;
+}
+
+.contact-form {
+max-width: 500px;
+margin: 0 auto; 
+text-align: left; 
+padding: 30px;
+background-color: #fcfcfc;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.form-group {
+margin-bottom: 20px;
+}
+
+.form-group label {
+display: block; 
+margin-bottom: 8px;
+font-weight: bold;
+color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+width: calc(100% - 20px); 
+padding: 10px;
+border: 1px solid #ddd;
+border-radius: 5px;
+font-size: 16px;
+transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+border-color: #00f0ff; 
+outline: none; 
+}
+
+.form-group textarea {
+resize: vertical; 
+}
+
+.submit-button {
+background-color: #00f0ff; 
+color: #000;
+padding: 12px 25px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 18px;
+font-weight: bold;
+transition: background-color 0.3s ease, transform 0.2s ease;
+display: block; 
+margin: 0 auto; 
+}
+
+.submit-button:hover {
+background-color: #00d0e0; 
+transform: translateY(-2px); 
+}
+
+.more-info-button {
+display: inline-block;
+margin-top: 30px;
+padding: 15px 30px;
+background-color: #3498db;
+color: white;
+text-decoration: none; 
+border-radius: 50px;
+font-weight: bold;
+font-size: 1.1em;
+transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+}
+
+.more-info-button:hover {
+background-color: #2980b9;
+transform: translateY(-3px);
+box-shadow: 0 8px 20px rgba(52, 152, 219, 0.6);
+}
+</style>
 </head>
 <body>
   <nav>
     <div class="logo" style="text-align: center; margin-bottom: 30px;">Serveur Web HTTP simple en langage C</div>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">A-propos</a></li>
+      <li><a href="about.html">À-propos</a></li>
       <li><a href="contact.html"> Contact</a></li>
-      <li><a href="more.html"> Plus-d'information</a></li>
+      <li><a href="#" class="active"> Plus d'information</a></li>
     </ul>
   </nav>
 
