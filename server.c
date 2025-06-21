@@ -51,8 +51,8 @@ int main() {
                 return 1;
         }
 
-        printf("server running at http://localhost: %d...\n", PORT);
-        printf("Press Ctrl+C to stop the server.\n");
+        printf("serveur fonctionnant sur http://localhost: %d...\n", PORT);
+        printf("Appuyez sur Ctrl+C pour arrêter le serveur.\n");
 
         // 4. Accepter une connexion
         while (1) {
@@ -67,11 +67,15 @@ int main() {
                 int valread = recv(new_socket, buffer, BUFFER_SIZE, 0);
                 if(valread < 0) {
                         perror("recv");
-                        close(new_socket);
+#ifdef _WIN32
+			closesocket(new_socket);
+#else
+			close(new_socket);
+#endif
                         continue;
                 }
 
-                printf("Received request:\n%s\n", buffer);
+                printf("Demande reçue:\n%s\n", buffer);
 
                 // Analyser la méthode et le chemin HTTP
                 char method[8], path[1019]; // 1024 - 1 (for dot) - 1 (for null) - 3 extra buffer
@@ -100,13 +104,26 @@ int main() {
                         file_buffer[fsize] = 0;
                         fclose(fp);
 
+			const char *content_type = "text/plain";
+			if (strstr(filepath, ".html")) {
+				content_type = "text/html";
+			} else if (strstr(filepath, ".css")) {
+				content_type = "text/css";
+			} else if (strstr(filepath, ".js")) {
+				content_type = "application/javascript";
+			} else if (strstr(filepath, ".png")) {
+				content_type = "image/png";
+			} else if (strstr(filepath, ".jpg") || strstr(filepath, ".jpeg")) {
+				content_type = "image/jpeg";
+			}
+
                         // 6. Envoyer une réponse http de base
                         char header[256];
                         sprintf(header,
                                         "HTTP/1.1 200 OK\r\n"
                                         "Content-length: %ld\r\n"
-                                        "Content-Type: text/html\r\n"
-                                        "\r\n", fsize);
+                                        "Content-Type: %s\r\n"
+                                        "\r\n", fsize, content_type);
                         send(new_socket, header, strlen(header), 0);
                         send(new_socket, file_buffer, fsize, 0);
                         free(file_buffer);
