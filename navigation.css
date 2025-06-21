@@ -52,10 +52,10 @@
     background-color: #aac700;
     color: #ffd700;
     transform: translateY(-2px);
-    box-shadow: 0 3px 8px rgba(52, 152, 219, 0.4);
+    box-shadow: 0 0 10px #ffd700, 0 0 4px #fff inset;
 }
 
-/* Hamburger button for mobile */
+/* Hamburger menu for mobile */
 .menu-toggle {
     display: none;
     background: none;
@@ -65,7 +65,7 @@
     cursor: pointer;
 }
 
-/* Responsive Design */
+/* Responsive styles */
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
