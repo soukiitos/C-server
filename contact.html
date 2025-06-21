@@ -193,7 +193,7 @@ box-shadow: 0 8px 20px rgba(52, 152, 219, 0.6);
   <header>
     <nav class="navbar">
       <div class="navbar-container">
-        <div class="logo" style="text-align: center; margin-bottom: 30px; font-size: 2.5rem;">Serveur Web HTTP en C</div>
+	      <div class="logo" style="font-size: 3.2rem; font-weight: 900; text-shadow: 0 0 10px #ffd700, 0 0 20px #ff1493; background: linear-gradient(90deg, #ffd700, #ff1493); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-align: center;">Serveur Web HTTP en langage C</div>
         <button class="menu-toggle" id="menu-toggle">&#9776;</button>
         <ul class="nav-links" id="nav-links">
           <li><a href="index.html">Home</a></li>
@@ -222,6 +222,9 @@ box-shadow: 0 8px 20px rgba(52, 152, 219, 0.6);
           <textarea id="message" name="message" rows="6" required></textarea>
         </div>
         <button type="submit" class="submit-button">Envoyer Message</button>
+	<div id="success-message" style="display:none; margin-top: 20px; color: green; font-weight: bold; text-align: center;">
+		Message envoyé avec succès !
+	</div>
       </form>
     </div>
     <div class="footer">Fait par Soukaina Lachheb</div>
