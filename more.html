@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rapport Complet du Serveur Web - Portfolio Personnel</title>
+  <title>Rapport Complet du Serveur Web</title>
   <link rel="stylesheet" href="global.css">
   <link rel="stylesheet" href="navigation.css">
   <link rel="stylesheet" href="style.css">
   <style>
-    /* START OF INLINE STYLES - AS PER YOUR REQUEST, THESE ARE KEPT */
     * {
         box-sizing: border-box;
         padding: 0;
@@ -19,21 +18,18 @@
         color: #333;
     }
 
-    /* h1 in content sections */
     h1 {
         font-size: 2.5rem;
         color: #4b0082;
         margin-bottom: 20px;
     }
 
-    /* General paragraph style */
     p {
         font-size: 1.1rem;
         line-height: 1.6;
         color: #555;
     }
 
-    /* Main content container style */
     .content-container {
         max-width: 800px;
         margin: 50px auto;
@@ -43,27 +39,24 @@
         box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
     }
 
-    /* Logo styles within nav should ideally be in navigation.css, keeping here as requested */
-    .logo { /* This targets .logo within nav, or any other .logo on the page */
-        padding-bottom: 10px; /* If this is for the nav logo, navigation.css should handle it */
+    .logo {
+        padding-bottom: 10px;
     }
 
-    .logo h1 { /* This style is probably for a page title with class="logo", not the nav logo */
+    .logo h1 {
         font-size: 42px;
         color: #2c3e50;
     }
 
-    /* Footer styles */
     .footer {
         color: #898;
         font-size: 1rem;
         margin-top: 40px;
-        text-align: center; /* Added for consistency */
+        text-align: center;
     }
 
     @media (max-width: 700px) {
-        /* These rules are specific to the container and headings */
-        .content-container { /* Changed from .container */
+        .content-container {
             padding: 35px;
             margin: 30px 20px;
         }
@@ -72,7 +65,6 @@
         }
     }
 
-    /* Styles for the contact form section */
     .contact-section {
         margin-top: 60px;
         padding-top: 40px;
@@ -147,7 +139,6 @@
         transform: translateY(-2px);
     }
 
-    /* Button for more info / back */
     .more-info-button {
         display: inline-block;
         margin-top: 30px;
@@ -168,12 +159,11 @@
         box-shadow: 0 8px 20px rgba(52, 152, 219, 0.6);
     }
 
-    /* Style for the back button */
     .back-button {
         display: inline-block;
         margin-bottom: 30px;
         padding: 10px 20px;
-        background-color: #6c757d; /* A subtle gray */
+        background-color: #6c757d;
         color: white;
         text-decoration: none;
         border-radius: 5px;
@@ -186,7 +176,6 @@
         transform: translateY(-1px);
     }
 
-    /* ABOUT SECTION SPECIFIC STYLES - INTEGRATED FROM about.html */
     .about-header {
         text-align: center;
         padding-bottom: 20px;
@@ -206,21 +195,30 @@
         margin-bottom: 30px;
     }
     .about-section ul {
-        list-style-type: none; /* Remove default bullet points */
+        list-style-type: none;
         padding-left: 0;
     }
     .about-section ul li {
         background-color: #f5f5f5;
         margin-bottom: 10px;
         padding: 15px;
-        border-left: 5px solid #3498db; /* A colored border for emphasis */
+        border-left: 5px solid #3498db;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
     .about-section ul li strong {
         color: #333;
     }
-    /* END OF INLINE STYLES */
+
+    .contact-container {
+        max-width: 800px;
+        margin: 50px auto;
+        background: white;
+        padding: 40px;
+        border-radius: 16px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
   </style>
 </head>
 <body>
@@ -239,14 +237,16 @@
 
     <h1>Rapport Complet : Serveur Web de Portfolio Personnel</h1>
 
+    ---
+
     <h2>📄 Aperçu du Projet</h2>
-    <p>Ce projet présente un **serveur web minimaliste** développé en **C**, conçu spécifiquement pour héberger une page de portfolio personnel (<code>index.html</code>). Le serveur est programmé pour **traiter efficacement les requêtes HTTP** et délivrer le contenu HTML. Notre objectif est de fournir aux utilisateurs un portfolio personnel à la fois élégant et informatif, en mettant en valeur les compétences en développement système.</p>
+    <p>Ce projet présente un serveur web minimaliste développé en C, conçu spécifiquement pour héberger une page de portfolio personnel (<code>index.html</code>). Le serveur est programmé pour traiter efficacement les requêtes HTTP et délivrer le contenu HTML. Notre objectif est de fournir aux utilisateurs un portfolio personnel à la fois élégant et informatif, en mettant en valeur les compétences en développement système.</p>
     <p>La page web elle-même arbore un design épuré, comprenant un logo central proéminent, un menu de navigation horizontal convivial, et les détails essentiels sur le créateur du portfolio. Ce projet constitue une excellente opportunité pratique pour :</p>
     <ul>
-      <li>**Comprendre les concepts fondamentaux du réseau** grâce à la programmation de sockets en C.</li>
-      <li>**Démystifier le fonctionnement interne des serveurs web** à un niveau bas.</li>
-      <li>**Développer et styliser une page web personnelle** en utilisant les bases de HTML et CSS.</li>
-      <li>**Acquérir une expérience pratique en déploiement et test** d'applications dans un environnement Ubuntu/Linux.</li>
+      <li>Comprendre les concepts fondamentaux du réseau grâce à la programmation de sockets en C.</li>
+      <li>Démystifier le fonctionnement interne des serveurs web à un niveau bas.</li>
+      <li>Développer et styliser une page web personnelle en utilisant les bases de HTML et CSS.</li>
+      <li>Acquérir une expérience pratique en déploiement et test d'applications dans un environnement Ubuntu/Linux.</li>
     </ul>
 
     ---
@@ -255,18 +255,18 @@
     <h3>✅ 1. Prérequis Techniques</h3>
     <p>Avant de démarrer le projet, assurez-vous que votre système d'exploitation est équipé des outils suivants :</p>
     <ul>
-      <li>**Compilateur C :** Principalement <code>gcc</code> (GNU Compiler Collection).</li>
-      <li>**Émulateur de Terminal :** Tout client de terminal compatible (par exemple, GNOME Terminal, PuTTY sur Windows).</li>
-      <li>**Éditeur de Texte :** Des éditeurs comme <code>nano</code>, <code>gedit</code>, VS Code, ou tout autre IDE de votre choix.</li>
-      <li>**Connaissances en HTML/CSS :** Une compréhension de base de ces langages est recommandée pour la personnalisation du contenu web.</li>
+      <li>Compilateur C: Principalement <code>gcc</code> (GNU Compiler Collection).</li>
+      <li>Émulateur de Terminal : Tout client de terminal compatible (par exemple, GNOME Terminal, PuTTY sur Windows).</li>
+      <li>Éditeur de Texte : Des éditeurs comme <code>nano</code>, <code>gedit</code>, VS Code, ou tout autre IDE de votre choix.</li>
+      <li>Connaissances en HTML/CSS : Une compréhension de base de ces langages est recommandée pour la personnalisation du contenu web.</li>
     </ul>
     <p>Pour installer le compilateur C sur les systèmes basés sur Debian/Ubuntu, utilisez la commande suivante dans votre terminal :</p>
     <pre><code class="language-bash">sudo apt update
 sudo apt install build-essential</code></pre>
 
-    <h3>✅ 2. Création et Compilation du Serveur Web en C (`server.c`)</h3>
-    <p>Commencez par créer un fichier nommé `server.c` et copiez-y le code source du serveur C. Ce code a été conçu pour être compatible avec les environnements Linux et Windows, gérant les spécificités des sockets de chaque système.</p>
-    <p>Voici le code de votre `server.c` :</p>
+    <h3>✅ 2. Code Source du Serveur Web en C (`server.c`)</h3>
+    <p>Le cœur de ce projet est le fichier <code>server.c</code>. Ce code met en place un serveur HTTP minimaliste capable de répondre aux requêtes web de base. Il gère la création de sockets, la liaison à un port, l'écoute des connexions entrantes, la lecture des requêtes HTTP et l'envoi des fichiers demandés. Il inclut également des adaptations pour la compatibilité avec les systèmes d'exploitation Windows et Linux.</p>
+    <p>Voici le code complet de votre <code>server.c</code> :</p>
     <pre><code class="language-c">// server.c
 #include &lt;stdio.h&gt;
 #include &lt;stdlib.h&gt;
@@ -416,26 +416,22 @@ int main() {
 }
 </code></pre>
 
-    <p>Pour **compiler** votre serveur :</p>
+    <h3>Compilation et Exécution du Serveur</h3>
+    <p>Pour compiler votre serveur sur un système Linux/macOS :</p>
     <pre><code class="language-bash">gcc server.c -o server</code></pre>
-    <p>Si vous êtes sur **Windows** (avec MinGW ou un environnement similaire) :</p>
+    <p>Sur Windows (avec MinGW ou un environnement similaire), vous devez lier la bibliothèque Winsock :</p>
     <pre><code class="language-bash">gcc server.c -o server.exe -lws2_32</code></pre>
-    <p>Pour **exécuter** votre serveur :</p>
+    <p>Une fois compilé, exécutez le serveur depuis votre terminal :</p>
     <pre><code class="language-bash">./server  # Ou .\server.exe sur Windows</code></pre>
+    <p>Le serveur démarrera et écoutera sur <code>http://localhost:8080</code>.</p>
 
-    <h3>✅ 3. Création des Pages Web Statiques</h3>
-    <p>Le serveur est conçu pour servir des fichiers HTML et autres ressources statiques. Assurez-vous d'avoir les fichiers suivants dans le **même répertoire** que votre exécutable `server` :</p>
-    <ul>
-      <li>**`index.html` :** La page d'accueil principale de votre portfolio.</li>
-      <li>**`about.html` :** La page "À propos de ce projet".</li>
-      <li>**`contact.html` :** Une page pour vos informations de contact.</li>
-      <li>**`more.html` :** La page que vous lisez actuellement, détaillant le projet.</li>
-      <li>**`global.css` :** Votre feuille de style générale pour une apparence cohérente.</li>
-      <li>**`navigation.css` :** La feuille de style dédiée à la barre de navigation.</li>
-      <li>**`style.css` :** Tout style additionnel spécifique à certaines pages (si nécessaire).</li>
-    </ul>
+    ---
 
-    <p>Votre `index.html` est structuré comme suit, intégrant la navigation et un formulaire de contact :</p>
+    <h2>🌐 Structure et Contenu des Pages Web Statiques</h2>
+    <p>Notre serveur est configuré pour servir plusieurs fichiers HTML et CSS qui composent notre portfolio. Assurons-ous que tous ces fichiers se trouvent dans le même répertoire que notre exécutable <code>server</code>.</p>
+
+    <h3>📄 `index.html` - La Page d'Accueil Principale</h3>
+    <p>C'est la page d'entrée de notre portfolio, accueillant les visiteurs et introduisant le concept du serveur web en C. Elle intègre la navigation et une section de contact.</p>
     <pre><code class="language-html">&lt;!DOCTYPE html&gt;
 &lt;html lang="fr"&gt;
 &lt;head&gt;
@@ -445,7 +441,6 @@ int main() {
     &lt;link rel="stylesheet" href="global.css"&gt;
     &lt;link rel="stylesheet" href="navigation.css"&gt;
     &lt;style&gt;
-        /* All these styles should be in global.css or index.css for better organization */
         * {
             box-sizing: border-box;
             padding: 0;
@@ -493,7 +488,6 @@ int main() {
             color: #2c3e50;
         }
 
-        /* Nav styles in index.html are conflicting with navigation.css */
         /* nav ul {
             list-style: none;
             display: flex;
@@ -532,7 +526,6 @@ int main() {
             }
         }
 
-        /* Styles pour le formulaire de contact */
         .contact-section {
             margin-top: 60px;
             padding-top: 40px;
@@ -675,261 +668,805 @@ int main() {
 &lt;/html&gt;
 </code></pre>
 
-    <p>Pour **compiler** votre serveur :</p>
-    <pre><code class="language-bash">gcc server.c -o server</code></pre>
-    <p>Si vous êtes sur **Windows** (avec MinGW ou un environnement similaire) :</p>
-    <pre><code class="language-bash">gcc server.c -o server.exe -lws2_32</code></pre>
-    <p>Pour **exécuter** votre serveur :</p>
-    <pre><code class="language-bash">./server  # Ou .\server.exe sur Windows</code></pre>
-
-    <h3>✅ 3. Création des Pages Web Statiques</h3>
-    <p>Le serveur est conçu pour servir des fichiers HTML et autres ressources statiques. Assurez-vous d'avoir les fichiers suivants dans le **même répertoire** que votre exécutable `server` :</p>
-    <ul>
-      <li>**`index.html` :** La page d'accueil principale de votre portfolio.</li>
-      <li>**`about.html` :** La page "À propos de ce projet".</li>
-      <li>**`contact.html` :** Une page pour vos informations de contact.</li>
-      <li>**`more.html` :** La page que vous lisez actuellement, détaillant le projet.</li>
-      <li>**`global.css` :** Votre feuille de style générale pour une apparence cohérente.</li>
-      <li>**`navigation.css` :** La feuille de style dédiée à la barre de navigation.</li>
-      <li>**`style.css` :** Tout style additionnel spécifique à certaines pages (si nécessaire).</li>
-    </ul>
-
-    <p>Votre `index.html` est structuré comme suit, intégrant la navigation et un formulaire de contact :</p>
+    <h3>📄 `about.html` - À propos de ce Projet</h3>
+    <p>Cette page est dédiée à la présentation du serveur web lui-même, expliquant sa nature minimaliste, les raisons du choix du langage C, et les bénéfices de cette approche pour la compréhension des réseaux.</p>
     <pre><code class="language-html">&lt;!DOCTYPE html&gt;
 &lt;html lang="fr"&gt;
 &lt;head&gt;
-    &lt;meta charset="UTF-8" /&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt;
-    &lt;title&gt;Serveur HTTP simple en langage C&lt;/title&gt;
-    &lt;link rel="stylesheet" href="global.css"&gt;
-    &lt;link rel="stylesheet" href="navigation.css"&gt;
-    &lt;style&gt;
-        /* All these styles should be in global.css or index.css for better organization */
-        * {
-            box-sizing: border-box;
-            padding: 0;
-            margin: 0;
-        }
-        body {
-            background: linear-gradient(135deg, #ab14fd 0%, #c2e9fb 100%);
-            color: #333;
-        }
+&lt;meta charset="UTF-8" /&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt;
+&lt;title&gt;À propos de ce Projet - Serveur Web en C&lt;/title&gt;
+&lt;link rel="stylesheet" href="global.css"&gt;
+&lt;link rel="stylesheet" href="navigation.css"&gt;
+&lt;style&gt;
+* {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+body {
+background: linear-gradient(135deg, #ab14fd 0%, #c2e9fb 100%);
+color: #333;
+}
 
-        header {
-            background-color: #4b11f5;
-            box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
-            padding: 26px 0;
-        }
+header {
+background-color: #4b11f5;
+box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
+padding: 26px 0;
+}
 
-        h1 {
-            font-size: 2.5rem;
-            color: #4b0082;
-            margin-bottom: 20px;
-        }
+h1 {
+font-size: 2.5rem;
+color: #4b0082;
+margin-bottom: 20px;
+}
 
-        p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            color: #555;
-        }
+p {
+font-size: 1.1rem;
+line-height: 1.6;
+color: #555;
+}
 
-        .container { /* This is the main content container for index.html */
-            max-width: 800px;
-            margin: 50px auto;
-            background: white;
-            padding: 40px;
-            border-radius: 16px;
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
+.container {
+max-width: 800px;
+margin: 50px auto;
+background: white;
+padding: 40px;
+border-radius: 16px;
+box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+text-align: center;
+}
 
-        .logo { /* This .logo is inside header/nav in index.html */
-            padding-bottom: 10px;
-        }
+.logo {
+padding-bottom: 10px;
+}
 
-        .logo h1 { /* This seems to target a h1 inside a div with class logo */
-            font-size: 42px;
-            color: #2c3e50;
-        }
+.logo h1 {
+font-size: 42px;
+color: #2c3e50;
+}
 
-        /* Nav styles in index.html are conflicting with navigation.css */
-        /* nav ul {
-            list-style: none;
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-        }
+nav ul {
+list-style: none;
+display: flex;
+gap: 15px;
+justify-content: center;
+}
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            padding: 10px 15px;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-        }
+nav ul li a {
+color: white;
+text-decoration: none;
+font-weight: 500;
+padding: 10px 15px;
+border-radius: 8px;
+transition: all 0.3s ease;
+}
 
-        nav ul li a:hover {
-            color: #ffd700;
-            border-color: #ffd700;
-            box-shadow: 0 0 10px #ffd700, 0 0 5px #fff inset;
-        } */
+nav ul li a:hover {
+color: #ffd700;
+border-color: #ffd700;
+box-shadow: 0 0 10px #ffd700, 0 0 5px #fff inset;
+}
 
-        .footer {
-            color: #898;
-            font-size: 1rem;
-            margin-top: 40px;
-        }
+.footer {
+color: #898;
+font-size: 1rem;
+margin-top: 40px;
+}
 
-        @media (max-width: 700px) {
-            .container {
-                padding: 35px;
-                margin: 30px 20px;
-            }
-            h1 {
-                font-size: 2rem;
-            }
-        }
+@media (max-width: 700px) {
+/* Ces règles sont spécifiques au conteneur et aux titres d'index.html si elles ne sont pas dans navigation.css */
+.container {
+  padding: 35px;
+  margin: 30px 20px;
+}
+h1 {
+  font-size: 2rem;
+}
+}
 
-        /* Styles pour le formulaire de contact */
-        .contact-section {
-            margin-top: 60px;
-            padding-top: 40px;
-            border-top: 1px solid #eee;
-        }
+/* Styles pour le formulaire de contact */
+.contact-section {
+margin-top: 60px; 
+padding-top: 40px;
+border-top: 1px solid #eee; 
+}
 
-        .contact-section h2 {
-            color: #333;
-            font-size: 28px;
-            margin-bottom: 30px;
-        }
+.contact-section h2 {
+color: #333;
+font-size: 28px;
+margin-bottom: 30px;
+}
 
-        .contact-form {
-            max-width: 500px;
-            margin: 0 auto;
-            text-align: left;
-            padding: 30px;
-            background-color: #fcfcfc;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
+.contact-form {
+max-width: 500px;
+margin: 0 auto; 
+text-align: left; 
+padding: 30px;
+background-color: #fcfcfc;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
 
-        .form-group {
-            margin-bottom: 20px;
-        }
+.form-group {
+margin-bottom: 20px;
+}
 
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-            color: #555;
-        }
+.form-group label {
+display: block; 
+margin-bottom: 8px;
+font-weight: bold;
+color: #555;
+}
 
-        .form-group input[type="text"],
-        .form-group input[type="email"],
-        .form-group textarea {
-            width: calc(100% - 20px);
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 16px;
-            transition: border-color 0.3s ease;
-        }
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+width: calc(100% - 20px); 
+padding: 10px;
+border: 1px solid #ddd;
+border-radius: 5px;
+font-size: 16px;
+transition: border-color 0.3s ease;
+}
 
-        .form-group input[type="text"]:focus,
-        .form-group input[type="email"]:focus,
-        .form-group textarea:focus {
-            border-color: #00f0ff;
-            outline: none;
-        }
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+border-color: #00f0ff; 
+outline: none; 
+}
 
-        .form-group textarea {
-            resize: vertical;
-        }
+.form-group textarea {
+resize: vertical; 
+}
 
-        .submit-button {
-            background-color: #00f0ff;
-            color: #000;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 18px;
-            font-weight: bold;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-            display: block;
-            margin: 0 auto;
-        }
+.submit-button {
+background-color: #00f0ff; 
+color: #000;
+padding: 12px 25px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 18px;
+font-weight: bold;
+transition: background-color 0.3s ease, transform 0.2s ease;
+display: block; 
+margin: 0 auto; 
+}
 
-        .submit-button:hover {
-            background-color: #00d0e0;
-            transform: translateY(-2px);
-        }
+.submit-button:hover {
+background-color: #00d0e0; 
+transform: translateY(-2px); 
+}
 
-        .more-info-button {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 15px 30px;
-            background-color: #3498db;
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            font-size: 1.1em;
-            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
-        }
+.more-info-button {
+display: inline-block;
+margin-top: 30px;
+padding: 15px 30px;
+background-color: #3498db;
+color: white;
+text-decoration: none; 
+border-radius: 50px;
+font-weight: bold;
+font-size: 1.1em;
+transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+}
 
-        .more-info-button:hover {
-            background-color: #2980b9;
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(52, 152, 219, 0.6);
-        }
-    </style>
+.more-info-button:hover {
+background-color: #2980b9;
+transform: translateY(-3px);
+box-shadow: 0 8px 20px rgba(52, 152, 219, 0.6);
+}
+.about-header {
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ddd;
+}
+.about-header h1 {
+  font-size: 3em;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+.about-header p {
+  font-size: 1.2em;
+  color: #666;
+}
+.about-section {
+  margin-bottom: 30px;
+}
+.about-section ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding-left: 0;
+}
+.about-section ul li {
+  background-color: #f5f5f5;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-left: 5px solid #3498db;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.about-section ul li strong {
+  color: #333;
+}
+</style>
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;nav&gt;
-        &lt;div class="logo"&gt;Serveur Web HTTP en C&lt;/div&gt;
-        &lt;ul&gt;
-            &lt;li&gt;&lt;a href="index.html" class="active"&gt;Home&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="about.html"&gt;À propos&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="more.html"&gt;Plus d'information&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/nav&gt;
+&lt;nav&gt;
+&lt;div class="logo" style="text-align: center; margin-bottom: 30px;"&gt;Serveur Web HTTP simple en langage C&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#" class="active"&gt;À-propos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="contact.html"&gt; Contact&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="more.html"&gt; Plus d'information&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
 
-    &lt;div class="content-container"&gt;
-        &lt;h1&gt;Bienvenue sur mon serveur web en langage C!&lt;/h1&gt;
-        &lt;p&gt;Cette page Web est servie à partir d’un serveur HTTP minimal écrit entièrement en C.&lt;/p&gt;
-        &lt;p&gt;Ce programme implémente un serveur HTTP minimal qui écoute sur le port 8080. Il accepte les connexions TCP entrantes, analyse les requêtes HTTP GET, et sert les fichiers HTML statiques. En cas de fichier manquant, il retourne une erreur 404.&lt;/p&gt;
-        &lt;p&gt;Le serveur tourne en boucle infinie et peut être arrêté avec Ctrl+C. Compatible tous systèmes.&lt;/p&gt;
-        &lt;p&gt;Pour travailler sur ce projet, j'ai écrit un fichier C (ex: &lt;code&gt;server.c&lt;/code&gt;), compilé avec &lt;code&gt;gcc server.c -o server&lt;/code&gt;, puis j'ai ajouté un &lt;code&gt;index.html&lt;/code&gt;. Enfin, en lançant &lt;code&gt;./server&lt;/code&gt;, on accède à &lt;a href="http://localhost:8080" target="_blank"&gt;http://localhost:8080&lt;/a&gt;.&lt;/p&gt;
-        &lt;p&gt;Vous pouvez explorer le code source ou personnaliser cette page via &lt;code&gt;index.html&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="content-container"&gt;
+&lt;div class="about-header"&gt;
+&lt;h1&gt;À propos de ce Serveur Web Minimaliste en C&lt;/h1&gt;
+&lt;p&gt;Découvrez la technologie fondamentale qui alimente ce portfolio personnel.&lt;/p&gt;
+&lt;/div&gt;
 
-        &lt;div class="contact-section"&gt;
-            &lt;h2&gt;Contactez-Nous&lt;/h2&gt;
-            &lt;form action="#" method="POST" class="contact-form"&gt;
-                &lt;div class="form-group"&gt;
-                    &lt;label for="name"&gt;Nom:&lt;/label&gt;
-                    &lt;input type="text" id="name" name="name" required&gt;
-                &lt;/div&gt;
-                &lt;div class="form-group"&gt;
-                    &lt;label for="email"&gt;E-mail:&lt;/label&gt;
-                    &lt;input type="email" id="email" name="email" required&gt;
-                &lt;/div&gt;
-                &lt;div class="form-group"&gt;
-                    &lt;label for="message"&gt;Message:&lt;/label&gt;
-                    &lt;textarea id="message" name="message" rows="6" required&gt;&lt;/textarea&gt;
-                &lt;/div&gt;
-                &lt;button type="submit" class="submit-button"&gt;Envoyer Message&lt;/button&gt;
-            &lt;/form&gt;
-        &lt;/div&gt;
+&lt;div class="about-section"&gt;
+&lt;h2&gt;Qu'est-ce que ce Serveur ?&lt;/h2&gt;
+&lt;p&gt;Ce projet est une &lt;strong&gt;implémentation d'un serveur HTTP minimal&lt;/strong&gt; entièrement écrit en &lt;strong&gt;langage C&lt;/strong&gt;. Il a été conçu spécifiquement pour &lt;strong&gt;servir des pages web statiques&lt;/strong&gt;, comme les pages de ce portfolio, directement depuis votre machine locale. C'est une excellente démonstration des &lt;strong&gt;capacités de programmation réseau de bas niveau&lt;/strong&gt; et une approche pratique pour comprendre comment les requêtes web sont traitées du côté serveur.&lt;/p&gt;
+&lt;p&gt;Le serveur est configuré pour écouter les connexions entrantes sur le &lt;strong&gt;port 8080&lt;/strong&gt;. Il accepte les requêtes HTTP GET de base, analyse le chemin du fichier demandé et envoie le contenu HTML correspondant. Si un fichier n'est pas trouvé dans le répertoire de travail actuel, le serveur répond de manière appropriée avec une &lt;strong&gt;erreur 404 Not Found&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Ce programme est conçu pour fonctionner en &lt;strong&gt;boucle infinie&lt;/strong&gt;, traitant les requêtes en continu jusqu'à ce qu'il soit arrêté manuellement (par exemple, avec &lt;code&gt;Ctrl+C&lt;/code&gt; dans le terminal). Sa conception en C le rend &lt;strong&gt;rapide, léger et compatible avec la plupart des systèmes d'exploitation&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
 
-        &lt;a href="more.html" class="more-info-button"&gt;Cliquez-ici pour plus d'informations&lt;/a&gt;
+&lt;div class="about-section"&gt;
+&lt;h2&gt;Pourquoi un Serveur en C ?&lt;/h2&gt;
+&lt;p&gt;Le choix du langage C pour ce projet n'est pas anodin. Il permet une &lt;strong&gt;compréhension approfondie des mécanismes sous-jacents&lt;/strong&gt; aux serveurs web. Contrairement à l'utilisation de frameworks web de haut niveau, le développement en C vous pousse à gérer directement :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;La création et la gestion des sockets :&lt;/strong&gt; La base de toute communication réseau.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;L'analyse des requêtes HTTP :&lt;/strong&gt; Interpréter les méthodes (comme GET) et les chemins demandés.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;La lecture et l'envoi de fichiers :&lt;/strong&gt; Gérer le flux de données entre le serveur et le client.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Cette approche permet non seulement de construire un serveur &lt;strong&gt;extrêmement efficace et économe en ressources&lt;/strong&gt;, mais aussi d'acquérir une &lt;strong&gt;expérience pratique inestimable&lt;/strong&gt; en programmation système et réseau.&lt;/p&gt;
+&lt;/div&gt;
 
-        &lt;div class="footer"&gt;Fait par Soukaina Lachheb&lt;/div&gt;
+&lt;div class="about-section"&gt;
+&lt;h2&gt;Relation avec les autres Pages du Portfolio&lt;/h2&gt;
+&lt;p&gt;Ce site de portfolio est composé de plusieurs pages, toutes servies de manière transparente par ce même serveur C :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="index.html"&gt;Accueil (Home)&lt;/a&gt; :&lt;/strong&gt; C'est la page d'entrée, présentant le concept du serveur et offrant une interface interactive. Elle met en lumière les capacités de base de notre serveur C.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="more.html"&gt;Plus d'informations&lt;/a&gt; :&lt;/strong&gt; Cette page fournit un rapport technique détaillé sur le processus de développement du serveur. Vous y trouverez des explications sur les prérequis, la compilation, l'exécution et des aperçus du code source C.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="Contact.html"&gt;Contact&lt;/a&gt; :&lt;/strong&gt; Une page standard pour permettre aux visiteurs de se connecter ou de laisser des messages.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Chaque lien que vous cliquez sur ce site démontre la capacité du serveur à répondre à des requêtes HTTP spécifiques et à livrer le contenu statique approprié, illustrant la polyvalence de notre solution minimaliste en C.&lt;/p&gt;
+&lt;/div&gt;
+
+<p style="text-align: center; margin-top: 30px;">Pour des détails techniques plus approfondis sur la mise en œuvre et le fonctionnement de ce serveur, nous vous encourageons à visiter la page <a href="more.html">Plus d'informations</a>.</p>
+
+    ---
+
+    <h3>📄 `contact.html` - Page de Contact</h3>
+    <p>Cette page contient un formulaire simple qui permet aux visiteurs d'envoyer des messages. Bien que le serveur C actuel ne traite pas les soumissions de formulaires (il s'agit d'un serveur statique), cette page montre comment un formulaire HTML est structuré.</p>
+    <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="fr"&gt;
+&lt;head&gt;
+ &lt;meta charset="UTF-8" /&gt;
+ &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt;
+ &lt;title&gt;Contact&lt;/title&gt;
+ &lt;link rel="stylesheet" href="global.css?v=1"&gt;
+ &lt;link rel="stylesheet" href="navigation.css?v=1"&gt;
+ &lt;style&gt;
+ * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+background: linear-gradient(135deg, #ab14fd 0%, #c2e9fb 100%);
+color: #333;
+}
+
+header {
+background-color: #4b11f5;
+box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
+padding: 26px 0;
+}
+
+h1 {
+font-size: 2.5rem;
+color: #4b0082;
+margin-bottom: 20px;
+}
+
+p {
+font-size: 1.1rem;
+line-height: 1.6;
+color: #555;
+}
+
+.container {
+max-width: 800px;
+margin: 50px auto;
+background: white;
+padding: 40px;
+border-radius: 16px;
+box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+text-align: center;
+}
+
+.logo {
+padding-bottom: 10px;
+}
+
+.logo h1 {
+font-size: 42px;
+color: #2c3e50;
+}
+
+nav ul {
+list-style: none;
+display: flex;
+gap: 15px;
+justify-content: center;
+}
+
+nav ul li a {
+color: white;
+text-decoration: none;
+font-weight: 500;
+padding: 10px 15px;
+border-radius: 8px;
+transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+color: #ffd700;
+border-color: #ffd700;
+box-shadow: 0 0 10px #ffd700, 0 0 5px #fff inset;
+}
+
+.footer {
+color: #898;
+font-size: 1rem;
+margin-top: 40px;
+}
+
+@media (max-width: 700px) {
+/* Ces règles sont spécifiques au conteneur et aux titres d'index.html si elles ne sont pas dans navigation.css */
+.container {
+  padding: 35px;
+  margin: 30px 20px;
+}
+h1 {
+  font-size: 2rem;
+}
+}
+
+/* Styles pour le formulaire de contact */
+.contact-section {
+margin-top: 60px; 
+padding-top: 40px;
+border-top: 1px solid #eee; 
+}
+
+.contact-section h2 {
+color: #333;
+font-size: 28px;
+margin-bottom: 30px;
+}
+
+.contact-form {
+max-width: 500px;
+margin: 0 auto; 
+text-align: left; 
+padding: 30px;
+background-color: #fcfcfc;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.form-group {
+margin-bottom: 20px;
+}
+
+.form-group label {
+display: block; 
+margin-bottom: 8px;
+font-weight: bold;
+color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+width: calc(100% - 20px); 
+padding: 10px;
+border: 1px solid #ddd;
+border-radius: 5px;
+font-size: 16px;
+transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+border-color: #00f0ff; 
+outline: none; 
+}
+
+.form-group textarea {
+resize: vertical; 
+}
+
+.submit-button {
+background-color: #00f0ff; 
+color: #000;
+padding: 12px 25px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 18px;
+font-weight: bold;
+transition: background-color 0.3s ease, transform 0.2s ease;
+display: block; 
+margin: 0 auto; 
+}
+
+.submit-button:hover {
+background-color: #00d0e0; 
+transform: translateY(-2px); 
+}
+
+.more-info-button {
+display: inline-block;
+margin-top: 30px;
+padding: 15px 30px;
+background-color: #3498db;
+color: white;
+text-decoration: none; 
+border-radius: 50px;
+font-weight: bold;
+font-size: 1.1em;
+transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+}
+
+.more-info-button:hover {
+background-color: #2980b9;
+transform: translateY(-3px);
+box-shadow: 0 8px 20px rgba(52, 152, 219, 0.6);
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ &lt;header&gt;
+  &lt;nav class="navbar"&gt;
+  &lt;div class="navbar-container"&gt;
+    &lt;div class="logo" style="text-align: center; margin-bottom: 30px; font-size: 2.5rem;"&gt;Serveur Web HTTP en C&lt;/div&gt;
+    &lt;button class="menu-toggle" id="menu-toggle"&gt;&amp;#9776;&lt;/button&gt;
+    &lt;ul class="nav-links" id="nav-links"&gt;
+    &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="about.html"&gt;À-propos&lt;/a&gt;&lt;/li&gt; 
+    &lt;li&gt;&lt;a href="#" class="active"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="more.html"&gt;Plus d'information&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
     &lt;/div&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
 
+&lt;div class="container"&gt;
+&lt;div class="contact-section"&gt;
+ &lt;h2&gt;Contactez-Nous&lt;/h2&gt;
+ &lt;form action="#" method="POST" class="contact-form"&gt;
+ &lt;div class="form-group"&gt;
+ &lt;label for="name"&gt;Nom:&lt;/label&gt;
+ &lt;input type="text" id="name" name="name" required&gt;
+ &lt;/div&gt;
+ &lt;div class="form-group"&gt;
+ &lt;label for="email"&gt;E-mail:&lt;/label&gt;
+ &lt;input type="email" id="email" name="email" required&gt;
+ &lt;/div&gt;
+ &lt;div class="form-group"&gt;
+ &lt;label for="message"&gt;Message:&lt;/label&gt;
+ &lt;textarea id="message" name="message" rows="6" required&gt;&lt;/textarea&gt;
+ &lt;/div&gt;
+ &lt;button type="submit" class="submit-button"&gt;Envoyer Message&lt;/button&gt;
+ &lt;/form&gt;
+ &lt;/div&gt;
+ &lt;div class="footer"&gt;Fait par Soukaina Lachheb&lt;/div&gt;
+ &lt;/div&gt;
+
+ &lt;script&gt;
+ document.getElementById('menu-toggle').addEventListener('click', function () {
+ document.getElementById('nav-links').classList.toggle('open');
+ });
+ &lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
+
+    ---
+
+    <h2>🎨 Feuilles de Style CSS</h2>
+    <p>Pour garantir une apparence cohérente et professionnelle à votre portfolio, plusieurs feuilles de style CSS sont utilisées.</p>
+
+    <h3>📄 `style.css` - Styles Généraux du Contenu</h3>
+    <p>Ce fichier contient les styles de base pour le corps du document, les conteneurs de contenu, les titres, les paragraphes et les éléments de code, offrant une base visuelle propre et lisible pour l'ensemble du site.</p>
+    <pre><code class="language-css">body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background-color: #ffffff;
+      padding: 30px 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #2c3e50;
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5em;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 15px;
+    }
+    h2 {
+      color: #3498db;
+      margin-top: 30px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 5px;
+      font-size: 1.8em;
+    }
+    h3 {
+      color: #555;
+      margin-top: 20px;
+      font-size: 1.4em;
+    }
+    p {
+      margin-bottom: 15px;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+    pre {
+      background-color: #eef;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.9em;
+      margin-bottom: 20px;
+    }
+    code {
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #f0f0f0;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
+    .back-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 25px;
+      background-color: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    .back-button:hover {
+      background-color: #2980b9;
+      transform: translateY(-2px);
+    }
+</code></pre>
+
+    <h3>📄 `navigation.css` - Styles de la Barre de Navigation</h3>
+    <p>Ce fichier gère l'apparence et le comportement de la barre de navigation, y compris les styles pour le logo, les liens de navigation, et l'implémentation d'un menu hamburger réactif pour les petits écrans.</p>
+    <pre><code class="language-css">
+
+.navbar {
+  background-color: #2c3e50;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.navbar .logo {
+  font-size: 1.8em;
+  color: #ecf0f1;
+  font-weight: bold;
+  letter-spacing: 1px;
+  gap: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: #aac700;
+  color: #ffd700;
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px #ffd700, 0 0 4px #fff inset;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  font-size: 28px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #34495e;
+    width: 100%;
+    padding: 10px 0;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .nav-links.open {
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 10px 0;
+  }
+  
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .logo {
+    margin-bottom: 10px;
+  }
+}
+</code></pre>
+
+    <h3>📄 `global.css` - Styles Globaux et de Réinitialisation</h3>
+    <p>Ce fichier définit les styles fondamentaux qui s'appliquent à l'ensemble de votre site, y compris la réinitialisation des styles par défaut des navigateurs, les polices, les couleurs de fond, et les styles de base pour les en-têtes et les conteneurs.</p>
+    <pre><code class="language-css">
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #ab14fd 0%, #c2e9fb 100%);
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #4b0082;
+}
+h2 {
+  font-size: 1.8rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #3498db;
+}
+h3 {
+  font-size: 1.4rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+pre {
+  background-color: #eef;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}
+code {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f0f0f0;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.content-container {
+  max-width: 900px;
+  margin: 50px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.footer {
+  color: #898;
+  font-size: 1rem;
+  margin-top: 40px;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+}
+
+@media (max-width: 700px) {
+  .content-container {
+    padding: 35px;
+    margin: 30px 20px;
+  }
+  h1 {
+    font-size: 2rem;
+}
+}
+</code></pre>
+<h3>🚀 Conclusion et Perspectives d'Avenir</h3>
+<p>Ce projet de serveur web minimaliste en C, couplé à un portfolio personnel statique, offre une démonstration concrète de la puissance et de la flexibilité de la programmation système. En construisant un serveur HTTP à partir de zéro, nous avons exploré les fondements de la communication réseau, la gestion des sockets, l'analyse des requêtes HTTP et la livraison de contenu statique.</p>
+</body>
+</html>

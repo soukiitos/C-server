@@ -47,7 +47,7 @@ body {
     border: 1px solid #ddd;
     padding: 15px;
     border-radius: 5px;
-    overflow-x: auto; /* Enable horizontal scrolling for long code lines */
+    overflow-x: auto;
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.9em;
     margin-bottom: 20px;
