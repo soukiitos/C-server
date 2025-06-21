@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <link rel="stylesheet" href="global.css?v=1">
+  <link rel="stylesheet" href="navigation.css?v=1">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="logo" style="text-align: center; margin-bottom: 30px; font-size: 2.5rem;">Serveur Web HTTP en C</div>
+        <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="#" class="active">Contact</a></li>
+          <li><a href="more.html">Plus d'information</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="contact-section">
+      <h2>Contactez-Nous</h2>
+      <form action="#" method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="name">Nom:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+        <button type="submit" class="submit-button">Envoyer Message</button>
+      </form>
+    </div>
+    <div class="footer">Fait par Soukaina Lachheb</div>
+  </div>
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      document.getElementById('nav-links').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
