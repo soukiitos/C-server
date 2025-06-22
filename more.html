@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rapport Complet du Serveur Web</title>
+  <title>Rapport Complet du Serveur Web HTTP en langage C</title>
   <link rel="stylesheet" href="global.css">
   <link rel="stylesheet" href="navigation.css">
   <link rel="stylesheet" href="style.css">
@@ -235,7 +235,7 @@
   <div class="content-container">
     <a href="index.html" class="back-button">← Retour au Portfolio</a>
 
-    <h1>Rapport Complet : Serveur Web HTTP en langage C de Portfolio Personnel</h1>
+    <h1>Rapport Complet : Serveur Web HTTP en langage C</h1>
 
     ---
 
@@ -253,20 +253,20 @@
 
     <h2>🛠 Guide de Mise en Œuvre Détaillé</h2>
     <h3>✅ 1. Prérequis Techniques</h3>
-    <p>Avant de démarrer le projet, assurez-vous que votre système d'exploitation est équipé des outils suivants :</p>
+    <p>Avant de démarrer le projet, assurons-nous que notre système d'exploitation est équipé des outils suivants :</p>
     <ul>
       <li>Compilateur C: Principalement <code>gcc</code> (GNU Compiler Collection).</li>
-      <li>Émulateur de Terminal : Tout client de terminal compatible (par exemple, GNOME Terminal, PuTTY sur Windows).</li>
-      <li>Éditeur de Texte : Des éditeurs comme <code>nano</code>, <code>gedit</code>, VS Code, ou tout autre IDE de votre choix.</li>
+      <li>Émulateur de Terminal : Tout client de terminal compatible.</li>
+      <li>Éditeur de Texte : Des éditeurs comme <code>nano</code>, <code>gedit</code>, VS Code, ou tout autre IDE.</li>
       <li>Connaissances en HTML/CSS : Une compréhension de base de ces langages est recommandée pour la personnalisation du contenu web.</li>
     </ul>
-    <p>Pour installer le compilateur C sur les systèmes basés sur Debian/Ubuntu, utilisez la commande suivante dans votre terminal :</p>
+    <p>Pour installer le compilateur C sur les systèmes basés sur Debian/Ubuntu, utilisez la commande suivante dans notre terminal :</p>
     <pre><code class="language-bash">sudo apt update
 sudo apt install build-essential</code></pre>
 
     <h3>✅ 2. Code Source du Serveur Web en C (`server.c`)</h3>
     <p>Le cœur de ce projet est le fichier <code>server.c</code>. Ce code met en place un serveur HTTP minimaliste capable de répondre aux requêtes web de base. Il gère la création de sockets, la liaison à un port, l'écoute des connexions entrantes, la lecture des requêtes HTTP et l'envoi des fichiers demandés. Il inclut également des adaptations pour la compatibilité avec les systèmes d'exploitation Windows et Linux.</p>
-    <p>Voici le code complet de votre <code>server.c</code> :</p>
+    <p>Voici le code complet de notre <code>server.c</code> :</p>
     <pre><code class="language-c">// server.c
 #include &lt;stdio.h&gt;
 #include &lt;stdlib.h&gt;
@@ -417,11 +417,11 @@ int main() {
 </code></pre>
 
     <h3>Compilation et Exécution du Serveur</h3>
-    <p>Pour compiler votre serveur sur un système Linux/macOS :</p>
+    <p>Pour compiler notre serveur sur un système Linux/macOS :</p>
     <pre><code class="language-bash">gcc server.c -o server</code></pre>
-    <p>Sur Windows (avec MinGW ou un environnement similaire), vous devez lier la bibliothèque Winsock :</p>
+    <p>Sur Windows (avec MinGW ou un environnement similaire), nous devons lier la bibliothèque Winsock :</p>
     <pre><code class="language-bash">gcc server.c -o server.exe -lws2_32</code></pre>
-    <p>Une fois compilé, exécutez le serveur depuis votre terminal :</p>
+    <p>Une fois compilé, on exécute le serveur depuis notre terminal :</p>
     <pre><code class="language-bash">./server  # Ou .\server.exe sur Windows</code></pre>
     <p>Le serveur démarrera et écoutera sur <code>http://localhost:8080</code>.</p>
 
@@ -661,7 +661,7 @@ int main() {
 
         &lt;a href="more.html" class="more-info-button"&gt;Cliquez-ici pour plus d'informations&lt;/a&gt;
 
-        &lt;div class="footer"&gt;Fait par Soukaina Lachheb&lt;/div&gt;
+        &lt;div class="footer"&gt;Fait par Oumaima&lt;/div&gt;
     &lt;/div&gt;
 
 &lt;/body&gt;
@@ -1173,7 +1173,7 @@ box-shadow: 0 8px 20px rgba(52, 152, 219, 0.6);
  &lt;button type="submit" class="submit-button"&gt;Envoyer Message&lt;/button&gt;
  &lt;/form&gt;
  &lt;/div&gt;
- &lt;div class="footer"&gt;Fait par Soukaina Lachheb&lt;/div&gt;
+ &lt;div class="footer"&gt;Fait par Oumaima&lt;/div&gt;
  &lt;/div&gt;
 
  &lt;script&gt;
@@ -1188,7 +1188,7 @@ box-shadow: 0 8px 20px rgba(52, 152, 219, 0.6);
     ---
 
     <h2>🎨 Feuilles de Style CSS</h2>
-    <p>Pour garantir une apparence cohérente et professionnelle à votre portfolio, plusieurs feuilles de style CSS sont utilisées.</p>
+    <p>Pour garantir une apparence cohérente et professionnelle à notre portfolio, plusieurs feuilles de style CSS sont utilisées.</p>
 
     <h3>📄 `style.css` - Styles Généraux du Contenu</h3>
     <p>Ce fichier contient les styles de base pour le corps du document, les conteneurs de contenu, les titres, les paragraphes et les éléments de code, offrant une base visuelle propre et lisible pour l'ensemble du site.</p>
@@ -1374,7 +1374,7 @@ box-shadow: 0 8px 20px rgba(52, 152, 219, 0.6);
 </code></pre>
 
     <h3>📄 `global.css` - Styles Globaux et de Réinitialisation</h3>
-    <p>Ce fichier définit les styles fondamentaux qui s'appliquent à l'ensemble de votre site, y compris la réinitialisation des styles par défaut des navigateurs, les polices, les couleurs de fond, et les styles de base pour les en-têtes et les conteneurs.</p>
+    <p>Ce fichier définit les styles fondamentaux qui s'appliquent à l'ensemble de notre site, y compris la réinitialisation des styles par défaut des navigateurs, les polices, les couleurs de fond, et les styles de base pour les en-têtes et les conteneurs.</p>
     <pre><code class="language-css">
 
 
